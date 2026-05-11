@@ -185,7 +185,10 @@ st.markdown(f"""
 # SIDEBAR
 # ==========================================
 with st.sidebar:
-    st.markdown("## ⚡ Siemens H2R Portal")
+    try:
+        st.image(r"C:\Users\abdul\OneDrive\Desktop\Siemens\siemens_logo.png", width=160)
+    except Exception:
+        st.markdown("## ⚡ Siemens")
 
     st.markdown(f"<h3 style='color:{text_color}'>Navigation</h3>", unsafe_allow_html=True)
 
